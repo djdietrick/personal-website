@@ -130,7 +130,9 @@ body {
   padding: 2.5rem;
   text-align: center;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  height: 50rem;
+  position: relative; }
   .project-box:hover {
     transform: scale(1.02);
     box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
@@ -148,7 +150,9 @@ body {
     background-image: linear-gradient(to right, #2998ff, #5643fa);
     -webkit-background-clip: text;
     color: transparent;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    position: absolute;
+    bottom: 3rem; }
     .project-box__gitLink:hover {
       color: white; }
 
@@ -223,7 +227,13 @@ body {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .section-about {
-  padding: 5rem 0; }
+  padding: 5rem 0;
+  margin-top: -5rem;
+  margin-bottom: 5rem;
+  position: relative; }
+  .section-about__photo {
+    position: absolute;
+    width: 15%; }
 
 .section-projects {
   padding: 10rem 0;
