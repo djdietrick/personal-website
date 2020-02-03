@@ -24,10 +24,9 @@
                         About me
                     </h2>
                 </div>
-
                 <div class="row">
                     <div class="col-1-of-2 section-about__photo">
-                        <img src="me.jpg" alt="Me" class='section-about__photo'>
+                        <img src="assets/me.jpg" alt="Me" class='section-about__photo'>
                     </div>
                     <div class="col-1-of-2 section-about__text">
                         <p class="paragraph">
@@ -75,7 +74,7 @@
                             <i class='fas fa-globe project-box__icon'></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Personal Website</h3>
                             <p class="paragraph">This website! Isn't it nice?!</p>
-                            <p class="paragraph">Technogies used: Sass, VueJS, HTML</p>
+                            <p class="paragraph">Technogies used: VueJS, Sass, HTML</p>
                             <a href="https://github.com/djdietrick/personalWebsite"><i class="fab fa-github project-box__gitLink"></i></a>
                         </div>
                     </div>
