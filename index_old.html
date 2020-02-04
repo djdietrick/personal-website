@@ -1,21 +1,21 @@
-<template>
-  <div class="home">
-    <div class="navigation">
-            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-            <label for="navi-toggle" class="navigation__button">
-                <span class="navigation__icon">&nbsp;</span>
-            </label>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-            <!--<div class="navigation__background">&nbsp;</div>-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-                </ul>
-            </nav>
-        </div>
-     <header class="header">
+        <script src="https://kit.fontawesome.com/a39a4bd9a8.js"></script>
+        
+        <title>David Dietrick</title>
+    </head>
+    <body>
+        <header class="header">
             <div class="header__text-box u-center-text">
                 <h1 class="heading-primary">
                     <span class="heading-primary--main">David Dietrick</span>
@@ -39,19 +39,20 @@
                         About me
                     </h2>
                 </div>
+
                 <div class="row">
-                    <div class="col-1-of-2">
-                        <img src="@/assets/me_cropped.jpg" alt="Me" class='section-about__photo'>
+                    <div class="col-1-of-2 section-about__photo">
+                        <img src="img/me.jpg" alt="Me" class='section-about__photo'>
                     </div>
                     <div class="col-1-of-2 section-about__text">
-                        <p class="paragraph--about">
+                        <p class="paragraph">
                             I am a developer who loves to build cool shit!
                         </p>
-                        <p class="paragraph--about">
+                        <p class="paragraph">
                             I attended Stevens Institute of Technology in Hoboken, New Jersey where I got my Masters in Computer Engineering and my Bachelors
                             in Mechanical Engineering. I'm originally from Cape Cod, Massachusetts and am now living in Jersey City, New Jersey.
                         </p>
-                        <p class="paragraph--about">
+                        <p class="paragraph">
                             I'm a huge fan of Phish and all live music
                         </p>
                     </div>
@@ -86,30 +87,16 @@
                     </div>
                     <div class="col-1-of-3">
                         <div class="project-box">
-                            <i class='fas fa-book project-box__icon'></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Bullet Journal</h3>
-                            <p class="paragraph">Task tracker and calendar system based on the pen and paper method. Rapidly log tasks, events, and notes
-                              as they happen and track them at daily, monthly, and yearly levels. Learn more about the method <a href="https://bulletjournal.com/pages/learn">here</a>.
-                            </p>
-                            <p class="paragraph">Technogies used: NodeJS, VueJS, Sass</p>
-                            <a href="https://github.com/djdietrick/bulletJournal"><i class="fab fa-github project-box__gitLink"></i></a>
+                            <i class='fas fa-globe project-box__icon'></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Personal Website</h3>
+                            <p class="paragraph">This website! Isn't it nice?!</p>
+                            <p class="paragraph">Technogies used: Sass, VueJS, HTML</p>
+                            <a href="https://github.com/djdietrick/personalWebsite"><i class="fab fa-github project-box__gitLink"></i></a>
                         </div>
                     </div>
                     
                 </div>
             </section>
         </main>
-  </div>
-</template>
-
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+    </body>
+</html>

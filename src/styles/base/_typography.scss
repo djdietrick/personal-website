@@ -7,6 +7,11 @@ body {
     padding: 3rem;
 }
 
+a {
+    color: $color-primary-light;
+    text-decoration: none;
+}
+
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
@@ -72,6 +77,12 @@ body {
     font-size: $default-font-size;
 
     &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+    &--about {
+        font-size: 2rem;
+        font-weight: 300;
         margin-bottom: 3rem;
     }
 }
