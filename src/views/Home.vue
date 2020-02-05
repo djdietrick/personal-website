@@ -11,7 +11,8 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link">Home</a></li>
+                    <li class="navigation__item"><a href="/games" class="navigation__link">Games</a></li>
                 </ul>
             </nav>
         </div>
@@ -103,13 +104,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
 }
 </script>

@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Games from '../views/Games.vue'
+import Snake from '../components/Snake.vue'
+import TicTacToe from '../components/TicTacToe.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +12,25 @@ const routes = [
     path: '/',
     name: 'home',
     component: Home
+  },
+  {
+    path: '/games',
+    name: 'games',
+    component: Games,
+    children: [
+      {
+        path: 'snake',
+        components: {
+          gameView: Snake
+        }
+      },
+      {
+        path: 'tictactoe',
+        components: {
+          gameView: TicTacToe
+        }
+      }
+    ]
   }
 ]
 
