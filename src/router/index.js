@@ -4,6 +4,8 @@ import Home from '../views/Home.vue'
 import Games from '../views/Games.vue'
 import Snake from '../components/Snake.vue'
 import TicTacToe from '../components/TicTacToe.vue'
+import BrickBreaker from '../components/BrickBreaker.vue'
+
 
 Vue.use(VueRouter)
 
@@ -28,6 +30,12 @@ const routes = [
         path: 'tictactoe',
         components: {
           gameView: TicTacToe
+        }
+      },
+      {
+        path: 'brick',
+        components: {
+          gameView: BrickBreaker
         }
       }
     ]
