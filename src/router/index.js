@@ -2,10 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Games from '../views/Games.vue'
-import Snake from '../components/Snake.vue'
-import TicTacToe from '../components/TicTacToe.vue'
-import BrickBreaker from '../components/BrickBreaker.vue'
-
+import Snake from '../components/games/Snake.vue'
+import TicTacToe from '../components/games/TicTacToe.vue'
+import BrickBreaker from '../components/games/BrickBreaker.vue'
+import RandomShow from '../components/music/RandomShow'
 
 Vue.use(VueRouter)
 
@@ -39,6 +39,11 @@ const routes = [
         }
       }
     ]
+  },
+  {
+    path: '/random',
+    name: 'random',
+    component: RandomShow
   }
 ]
 
