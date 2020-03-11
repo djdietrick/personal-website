@@ -3,7 +3,7 @@ const app = express();
 const http = require('http');
 const path = require('path');
 const axios = require('axios');
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 
 // Connect to DB
 require('./db/db');
