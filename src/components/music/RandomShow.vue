@@ -77,10 +77,10 @@ export default {
     methods: {
       playSong: function() {
         musicContainer.classList.add('play');
-      playBtn.querySelector('i.fas').classList.remove('fa-play');
-      playBtn.querySelector('i.fas').classList.add('fa-pause');
+        playBtn.querySelector('i.fas').classList.remove('fa-play');
+        playBtn.querySelector('i.fas').classList.add('fa-pause');
 
-      audio.play();
+        audio.play();
       },
       pauseSong: function() {
         musicContainer.classList.remove('play');
@@ -141,7 +141,7 @@ export default {
 </script>
 
 <style lang="scss">
-    .music-container {
+.music-container {
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);

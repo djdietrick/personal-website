@@ -5,7 +5,7 @@
     text-align: center;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .5);
     transition: all 0.3s;
-    height: 50rem;
+    //height: 50rem;
     position: relative;
 
     &:hover {
@@ -31,7 +31,7 @@
         color: transparent;
         transition: all 0.2s;
         position: absolute;
-        bottom: 3rem;
+        bottom: 2rem;
 
         &:hover {
             color:white;

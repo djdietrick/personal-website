@@ -1,14 +1,31 @@
+.home {
+    display: grid;
+    grid-template-rows: 100vh 75vh 100vh;
+}
+
+.header {
+    grid-row: 1 / 2;
+}
+
 .section-about {
     padding: 5rem 0;
     margin-top: -5rem;
     margin-bottom: 5rem;
     position: relative;
-    height:75vh;
+    //height:75vh;
+    grid-row: 2 / 3;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-column-gap: 10rem;
+        padding: 0 10rem;
+    }
 
     &__photo {
-        position: absolute;
-        width: 25%;
-        right: 15%;
+        //position: absolute;
+        width: 25vw;
+        //right: 15%;
         border: 1rem solid $color-primary-dark;
         border-radius: 10px;
         transition: all .2s;
@@ -21,7 +38,19 @@
 }
 
 .section-projects {
-    padding: 10rem 0;
+    grid-row: 3 / 4;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10rem;
+        padding: 10rem 10rem;
+    }  
+
+    &__header {
+        //transform: translateY(5rem);
+        margin-top: 5rem;
+    }
 
     background-image: linear-gradient(
         to right bottom,
