@@ -1,5 +1,5 @@
 .header {
-    height: 95vh;
+    height: 100vh;
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
@@ -8,7 +8,7 @@
     background-size: cover;
     background-position: top;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0% 100%);
 
     &__logo-box {
         position: absolute;
@@ -26,10 +26,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-    }
 
-    hr {
-        margin-top:-3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .linkList {
@@ -43,6 +43,10 @@
         animation: moveInBottom 1.3s ease-out;
         animation-delay: 1s;
         animation-fill-mode: backwards;
+
+        display: flex;
+        justify-content: center;
+
     
         &__link {
             &:link,

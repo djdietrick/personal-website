@@ -27,11 +27,5 @@ Vue.use(VueResouce);
 new Vue({
   router,
   store,
-  render: function (h) { return h(App) },
-  http: {
-    headers: {
-      'Authorization': "Bearer 1bee85049b5537e26f7c235a197e930eb7c9b776953bdaa8a6527ef59c1c8301df64e038aba8bf074cb12719ce01c09a",
-      "Accept": "application/json"
-    }
-  }
+  render: function (h) { return h(App) }
 }).$mount('#app')

@@ -4,7 +4,6 @@ body {
     /*font-size: 16px;*/
     line-height: 1.7;
     color: $color-grey-light-1;
-    padding: 3rem;
 }
 
 a {
@@ -21,13 +20,13 @@ a {
 
     &--main {
         display: block;
-        font-size: 6rem;
-        font-weight: 400;
-        letter-spacing: 3.5rem;
+        font-size: 5rem;
+        font-weight: 300;
+        letter-spacing: 1rem;
     
         animation-name: fadeIn;
         animation-duration: 2s;
-        animation-timing-function: ease-out;
+        animation-timing-function: ease-in-out;
     
         /*
         animation-delay: 3s;
@@ -38,8 +37,8 @@ a {
     &--sub {
         display: block;
         font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: 1.7rem;
+        font-weight: 400;
+        letter-spacing: 1rem;
         animation: moveInBottom 1s ease-out;
         animation-delay: 1s;
         animation-fill-mode: backwards;

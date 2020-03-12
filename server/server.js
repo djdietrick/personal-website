@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 // Connect to DB
 require('./db/db');
 
-const token = 'Bearer 1bee85049b5537e26f7c235a197e930eb7c9b776953bdaa8a6527ef59c1c8301df64e038aba8bf074cb12719ce01c09a';
+const token = process.env.PHISHIN_TOKEN;
 axios.defaults.headers.get['Authorization'] = token;
 axios.defaults.headers.get['Accept'] = 'application/json';
 
