@@ -32,6 +32,8 @@
         transition: all 0.2s;
         position: absolute;
         bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
 
         &:hover {
             color:white;
