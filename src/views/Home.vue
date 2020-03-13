@@ -41,11 +41,11 @@
                 </div>
                 <div class="section-about__container">
                     <div class="section-about__text">
-                        <p class="paragraph--about">
+                        <p class="paragraph paragraph--about">
                             Hi! I'm David, a software engineer based out of Jersey City, NJ. I have a passion for backend development as well as a drive to learn
                             more about all areas of computer science. 
                         </p>
-                        <p class="paragraph--about">
+                        <p class="paragraph paragraph--about">
                             I attended <a href="http://www.stevens.edu">Stevens Institute of Technology</a> in Hoboken, New Jersey where I got my Masters in Computer Engineering and my Bachelors
                             in Mechanical Engineering. After Stevens I began working for <a href="http://www.rebarsys.com">Rebar Systems</a> building robust and efficient backends to support some of
                             the biggest hedge funds in the tristate area.
