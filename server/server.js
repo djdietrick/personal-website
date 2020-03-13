@@ -3,10 +3,13 @@ const app = express();
 const http = require('http');
 const path = require('path');
 const axios = require('axios');
+const cors = require('cors');
 const port = process.env.PORT || 3000;
 
 // Connect to DB
 require('./db/db');
+
+app.use(cors());
 
 const token = process.env.PHISHIN_TOKEN;
 axios.defaults.headers.get['Authorization'] = token;
