@@ -4,12 +4,16 @@ const http = require('http');
 const path = require('path');
 const axios = require('axios');
 const cors = require('cors');
+const bodyParser = require('body-parser');
 const port = process.env.PORT || 3000;
 
 // Connect to DB
 require('./db/db');
 
 app.use(cors());
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 const token = process.env.PHISHIN_TOKEN;
 axios.defaults.headers.get['Authorization'] = token;
