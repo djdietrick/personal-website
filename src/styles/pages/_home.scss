@@ -20,6 +20,7 @@
         grid-template-columns: 2fr 1fr;
         grid-column-gap: 10rem;
         padding: 0 10rem;
+        align-items: center;
 
         @media only screen and (max-width: $bp-small) {
             grid-template-rows: 1fr 2fr;
@@ -51,6 +52,10 @@
 
     &__text {
         height: min-content;
+    }
+
+    a {
+        color: &color-primary-light;
     }
 }
 
