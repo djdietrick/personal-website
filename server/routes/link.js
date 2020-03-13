@@ -22,6 +22,7 @@ router.post('/links', async(req, res) => {
         const newLink = await new Link(req.body).save();
         res.send(newLink);
     } catch(e) {
+        console.log(e);
         res.status(500).send(e);
     }
 });
