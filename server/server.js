@@ -6,6 +6,8 @@ const axios = require('axios');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 3000;
+const {PhishApp} = require('phishin-player');
+
 
 // Connect to DB
 require('./db/db');
@@ -15,15 +17,8 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-const token = process.env.PHISHIN_TOKEN;
-axios.defaults.headers.get['Authorization'] = token;
-axios.defaults.headers.get['Accept'] = 'application/json';
-
 app.use(express.static(path.join(__dirname, '../dist')));
 app.use(express.static('static'));
-
-const musicRouter = require('./routes/music');
-app.use(musicRouter);
 
 const linkRouter = require('./routes/link');
 app.use(linkRouter);
