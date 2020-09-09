@@ -148,6 +148,10 @@ export default {
     height: min-content;
     text-align: center;
 
+    @media only screen and (max-width: $bp-small) {
+        margin-top: 15rem;
+    }
+
     &__title {
         margin-bottom: 5rem;
     }
@@ -250,7 +254,7 @@ export default {
 
             &__description {
                 margin-top: 0.5rem;
-                font-size: 1.2rem;
+                font-size: 1.4rem;
                 text-align: start;
             }
         }

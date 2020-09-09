@@ -54,6 +54,9 @@
 
     &__text {
         margin-left: 4rem;
+        @media only screen and (max-width: $bp-small) {
+            margin-left: 0;
+        }
         p:not(:last-child) {
             margin-bottom: 3rem;
         }

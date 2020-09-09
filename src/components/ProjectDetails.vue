@@ -43,10 +43,11 @@ export default {
     position: relative;
     &__title {
         margin-bottom: 2rem;
+        font-weight: 300;
     }
 
     &__container {
-        background-color: $color-area;
+        background-color: rgba($color-area, 0.8);
         width: 50%;
         padding: 2rem;
         border-radius: 0.5rem;
