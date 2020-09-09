@@ -61,6 +61,7 @@ export default {
                     technologies: ["Vue", "Firebase", "Serverless", "Sass"],
                     link: "https://homepage.dietrick.dev",
                     git: "https://github.com/djdietrick/dash-homepage",
+                    img: "homepage.png",
                     featured: true
                 },
                 {
@@ -257,6 +258,10 @@ export default {
 
         &--small {
             font-size: 2rem;
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            @include clearfix;
         }
 
         &:hover {

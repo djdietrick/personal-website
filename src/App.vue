@@ -45,7 +45,7 @@ export default {
 #app {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 98vw;
 }
 
 </style>

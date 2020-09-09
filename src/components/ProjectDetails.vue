@@ -1,6 +1,6 @@
 <template>
     <div class="projects__details">
-        <div class="projects__details__container">
+        <div class="projects__details__container" :class="{ big : project.img === undefined}">
             <h3 class="projects__details__title text--primary">{{project.title}}</h3>
             <p class="projects__details__description">{{project.description}}</p>
             <div class="projects__details__techs">
@@ -16,7 +16,7 @@
                 </a>
             </div>
         </div>
-        <img src="@/assets/phish.png" :alt="project.img" class="projects__details__img"/>
+        <img v-if="project.img" :src="`img/${project.img}`" :alt="project.img" class="projects__details__img"/>
     </div>
 </template>
 
@@ -50,6 +50,8 @@ export default {
         width: 50%;
         padding: 2rem;
         border-radius: 0.5rem;
+        position: relative;
+        opacity: 0.8;
         z-index: 3;
     }
 
@@ -69,6 +71,7 @@ export default {
         border-radius: 4px;
         opacity: 0.7;
         color: $color-primary;
+        font-size: 1.2rem;
 
         &:not(:last-child) {
             margin-right: 5px;
@@ -77,7 +80,8 @@ export default {
 
     &__img {
         opacity: 0.7;
-        width: 50vw;
+        //width: 50vw;
+        height: 35vh;
         position: absolute;
         right: 0;
         top: 50%;
@@ -90,7 +94,7 @@ export default {
             z-index: 5;
             opacity: 1;
             transform: scale(1.25) 
-                translateY(-35%) 
+                translateY(-40%) 
                 translateX(-15%);
         }
     }
@@ -100,6 +104,10 @@ export default {
         margin-top: 2rem;
         text-align: center;
     }
+}
+
+.big {
+    width: 90%;
 }
 </style>
 
