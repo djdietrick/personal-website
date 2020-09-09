@@ -1,87 +1,92 @@
 body {
-    font-family: "Lato", sans-serif;
+    font-family: $font, sans-serif;
     font-weight: 400;
     /*font-size: 16px;*/
     line-height: 1.7;
-    color: $color-grey-light-1;
+    color: $color-grey-1;
 }
 
 a {
-    color: $color-primary-light;
+    color: $color-primary;
     text-decoration: none;
+    transition: 0.1s;
+
+    &:hover {
+        font-weight: 400;
+    }
 }
 
-.heading-primary {
-    color: $color-white;
-    text-transform: uppercase;
-
+h1 {
+    display: inline-block;
     backface-visibility: hidden;
     margin-bottom: 6rem;
+    text-transform: uppercase;
 
-    &--main {
-        display: block;
-        font-size: 5rem;
-        font-weight: 300;
-        letter-spacing: 1rem;
-    
-        animation-name: fadeIn;
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
-    
-        /*
-        animation-delay: 3s;
-        animation-iteration-count: 3;
-        */
-    }
-    
-    &--sub {
-        display: block;
-        font-size: 2rem;
-        font-weight: 400;
-        letter-spacing: 1rem;
-        animation: moveInBottom 1s ease-out;
-        animation-delay: 1s;
-        animation-fill-mode: backwards;
+    color: $h1-color;
+    font-weight: $h1-font-weight;
+    font-size: $h1-font-size;
+    letter-spacing: $h1-letter-spacing;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 4rem;
     }
 }
 
-.heading-secondary {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
+h2 {
     display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    -webkit-background-clip: text;
-    color: transparent;
-    letter-spacing: .2rem;
-    transition: all .2s;
 
-    // &:hover {
-    //     transform: scale(1.03);
-    //     text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
-    // }
+    font-size: $h2-font-size;
+    font-weight: $h2-font-weight;
+    letter-spacing: $h2-letter-spacing;
+    color: $h2-color;
 
-    &--white {
-        color: $color-grey-light-1;
+    @media only screen and (max-width: $bp-small) {
+        font-size: 3rem;
     }
 }
 
-.heading-tertiary {
-    font-size: $default-font-size;
-    font-weight: 700;
+h3 {
     text-transform: uppercase;
+
+    font-weight: $h3-font-weight;
+    font-size: $h3-font-size;
+    letter-spacing: $h3-letter-spacing;
+    color: $h3-color;
 }
 
-.paragraph {
-    font-size: $default-font-size;
-    font-weight: 300;
+p {
+    font-size: $p-font-size;
+    font-weight: $p-font-weight;
+    letter-spacing: $p-letter-spacing;
+    color: $p-color;
+}
 
-    &:not(:last-child) {
-        margin-bottom: 3rem;
+.text {
+    &--primary {
+        color: $color-primary;
     }
+    &--secondary {
+        color: $color-secondary;
+    }
+    &--tertiary {
+        color: $color-tertiary;
+    }
+    &--white {
+        color: $color-white;
+    }
+    &--black {
+        color: $color-black;
+    }
+    &--gradient {
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
 
-    &--about {
-        font-size: 2rem;
-        margin-bottom: 3rem;
+        &--secondary {
+            background-image: linear-gradient(to right, $color-secondary-light, $color-secondary-dark);
+        }
+        &--tertiary {
+            background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark);
+        }
     }
 }
