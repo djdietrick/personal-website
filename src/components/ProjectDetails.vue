@@ -53,6 +53,11 @@ export default {
         position: relative;
         opacity: 0.8;
         z-index: 3;
+        
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+        }
+
     }
 
     &__description {
@@ -90,6 +95,13 @@ export default {
         border-radius: 0.5rem;
         z-index: 0;
 
+        @media only screen and (max-width: $bp-small) {
+            width: 90vw;
+            top: 60%;
+            @include absCenterHorizontal;
+        }
+
+
         &:hover {
             z-index: 5;
             opacity: 1;
@@ -107,7 +119,7 @@ export default {
 }
 
 .big {
-    width: 90%;
+    width: 100%;
 }
 </style>
 

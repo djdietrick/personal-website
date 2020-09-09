@@ -41,7 +41,7 @@
         }
 
         @media only screen and (max-width: $bp-small) {
-            bottom: 15rem;
+            bottom: 25rem;
             flex-direction: column;
 
             .btn:not(:last-child) {
@@ -76,7 +76,7 @@
         }
 
          @media only screen and (max-width: $bp-small) {
-            bottom: 1rem;
+            bottom: 7rem;
          }
     }
 }

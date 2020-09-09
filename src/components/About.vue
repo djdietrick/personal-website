@@ -23,19 +23,20 @@
 <style lang="scss">
 @import "../styles/main.scss";
 .about {
-    height: 75vh;
+    //height: minmax(75vh, min-content);
+    min-height: 75vh;
     margin-top: 15rem;
     position: relative;
+    text-align: center;
 
     &__title {
-        @include absCenterHorizontal;
+        margin-bottom: 5rem;
     }
 
     &__content {
-        position: absolute;
-        top: 10rem;
         margin-left: 4rem;
         margin-right: 4rem;
+        text-align: start;
 
         display: grid;
         grid-template-columns: 1fr 1fr;

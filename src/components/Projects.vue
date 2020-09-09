@@ -157,6 +157,11 @@ export default {
         grid-template-columns: 1fr 4fr;
         grid-gap: 4rem;
         
+        @media only screen and (max-width: $bp-small) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 2.3fr;
+        }
+
     }
 
     &__list {
@@ -224,7 +229,7 @@ export default {
             margin-top: 4rem;
 
             @media only screen and (max-width: $bp-small) {
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
             }
         }
         
