@@ -96,19 +96,20 @@ export default {
         border-radius: 0.5rem;
         z-index: 0;
 
-        @media only screen and (max-width: $bp-small) {
+        @media only screen and (max-width: $bp-medium) {
             width: 90vw;
             top: 60%;
             @include absCenterHorizontal;
         }
 
-
-        &:hover {
-            z-index: 5;
-            opacity: 1;
-            transform: scale(1.25) 
-                translateY(-40%) 
-                translateX(-15%);
+        @media only screen and (min-width: $bp-medium) {
+            &:hover {
+                z-index: 5;
+                opacity: 1;
+                transform: scale(1.25) 
+                    translateY(-40%) 
+                    translateX(-15%);
+            }
         }
     }
 
