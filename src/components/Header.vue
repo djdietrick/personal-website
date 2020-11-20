@@ -14,6 +14,14 @@
                 <i class="fab fa-linkedin btn__icon"></i>
                 <div class="btn__text">Linkedin</div>
             </a>
+            <!-- <DashModal>
+                <template v-slot:content>
+                    TEST!
+                </template>
+                <template v-slot:trigger>
+                    <div class="btn">TEST</div>
+                </template>
+            </DashModal> -->
         </div>
         <div class="header__learn">
             <h3 class="text--primary">Learn More About Me</h3>
@@ -28,10 +36,12 @@
 .header {
     height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__buttons {
         position: absolute;
-        @include absCenterHorizontal;
         bottom: 14rem;
         display: flex;
         align-items: stretch;

@@ -3,6 +3,7 @@
     <Header />
     <transition name="fade" mode="in-out">
       <div v-if="initialized">
+        <Apps />
         <About />
         <Projects />
         <Contact />
@@ -13,6 +14,7 @@
 
 <script>
 import Header from "./components/Header.vue";
+import Apps from './components/Apps.vue';
 import About from "./components/About.vue";
 import Projects from "./components/Projects.vue";
 import Contact from "./components/Contact.vue"
@@ -22,6 +24,7 @@ export default {
   name: 'App',
   components: {
     Header,
+    Apps,
     About,
     Projects,
     Contact

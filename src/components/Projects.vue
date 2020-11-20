@@ -119,6 +119,12 @@ export default {
                      and find new color schemes for applications.`,
                     technologies: ["Vue", "SCSS"],
                     git: "https://github.com/djdietrick/theme-tester"
+                },
+                {
+                    title: "Dash-vue",
+                    description: "Collection of vue components with some base styling and behavior, but mostly meant to be reusable and customizable using slots",
+                    technologies: ["Vue", "SCSS", "Javascript"],
+                    git: "https://github.com/djdietrick/dash-vue"
                 }
             ],
             selectedProjectIndex: 0,

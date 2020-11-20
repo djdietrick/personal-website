@@ -16,8 +16,12 @@
         background-color: $color-area;
         border: none;
         color: $color-grey-1;
-        width: 90%;
+        width: 100%;
         transition: 0.2s ease-in-out;
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
 
         &:focus {
             outline: none;

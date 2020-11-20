@@ -46,7 +46,7 @@
             grid-template-columns: 2fr 1fr;
         }
 
-        @media only screen and (max-width: $bp-small) {
+        @media only screen and (max-width: $bp-medium) {
             grid-template-columns: 1fr;
             grid-template-rows: 30rem min-content;
         }
@@ -78,13 +78,13 @@
                 opacity: 0.9;
             }
 
-            @media only screen and (max-width: $bp-small) {
+            @media only screen and (max-width: $bp-medium) {
                 height: 30rem;
                 width: 30rem;
             }
         }
 
-        @media only screen and (max-width: $bp-small) {
+        @media only screen and (max-width: $bp-medium) {
             grid-row: 1 / 2;
         }
     }
